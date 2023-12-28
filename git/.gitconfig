@@ -5,7 +5,7 @@
 [init]
 	defaultBranch = main
 [core]
-	excludesfile = /Users/andresfe/.gitignore_global\
+	excludesfile = /Users/andresfe/.gitignore_global
 [color]
 	ui = auto
 [github]
