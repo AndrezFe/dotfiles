@@ -1,0 +1,28 @@
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[user]
+	name = Andres Felipe Ramirez Ocaña
+	email = andresfelipero94@hotmail.com
+	email = =
+	email = aramirez@indigo.tech
+[init]
+	defaultBranch = main
+[alias]
+	aa = add .
+  br = branch
+  st = status
+  sts = status -s -b
+  pullm = pull origin master
+  pushm = push origin master
+  cob = checkout -b
+  cm = commit -m
+  save = stash push
+  pop = stash pop
+  lg = log --oneline --decorate --all --graph
+
+
+[core]
+	excludesfile = /Users/andresfe/.gitignore_global

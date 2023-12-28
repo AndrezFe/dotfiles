@@ -1,0 +1,21 @@
+# Mac
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Custom
+.no-commit
+
+# vscode
+.vscode
+
+# Itellij
+.idea
+*.iml
+*.ipr
+*.iws
+
+

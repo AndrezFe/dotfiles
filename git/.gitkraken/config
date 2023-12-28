@@ -1,0 +1,82 @@
+{
+  "lastUpgradeScriptRun": "v9.0.0",
+  "appId": "e42634c6859862e0980cf70529947170776c84a0",
+  "userMilestones": {
+    "unregisteredId": "97c2d757-704c-4950-b9fc-11177aef23cc",
+    "firstAppOpen": true,
+    "firstLoginRegister": true,
+    "firstProfileCreated": true,
+    "completedFirstRepoModal": true,
+    "completedNewUserOnboarding": true,
+    "firstRepoOpened": true
+  },
+  "sslWhitelist": [],
+  "lastReleaseNotesDisplayed": "9.3.0",
+  "aliases": {
+    "repo": {},
+    "tabs": {}
+  },
+  "registration": {
+    "email": "andresfelipero94@hotmail.com",
+    "status": "activated",
+    "loginType": "github",
+    "date": "2023-04-08T19:56:22.618Z",
+    "EULA": {
+      "version": "8.3.1",
+      "status": "agree_verified"
+    }
+  },
+  "userId": "112ee69a-235f-4385-a02f-8e5f12f5d752",
+  "licensedFeatures": [
+    "pro",
+    "timelines:pro",
+    "suite:pro",
+    "gitlens:pro",
+    "boards:pro",
+    "student",
+    "timelines:student",
+    "suite:student",
+    "gitlens:student",
+    "bundle:student",
+    "boards:student"
+  ],
+  "userFeatures": [
+    {
+      "name": "gitkraken"
+    },
+    {
+      "name": "cli"
+    },
+    {
+      "name": "activityStatus"
+    },
+    {
+      "name": "terminalInsideRepoTab"
+    },
+    {
+      "name": "gitBash"
+    },
+    {
+      "name": "changePriceEnabled"
+    },
+    {
+      "name": "gkApi"
+    },
+    {
+      "name": "velocityInClient_9_0_0"
+    }
+  ],
+  "fuzzyFinderMetadata": {
+    "itemMetadata": {
+      "OPEN_REPO": {
+        "openRepo-/Volumes/Data/dev": {
+          "id": "openRepo-/Volumes/Data/dev",
+          "timestamps": [
+            1680983828314
+          ],
+          "total": 1
+        }
+      }
+    }
+  }
+}
