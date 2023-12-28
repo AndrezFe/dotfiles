@@ -50,3 +50,4 @@ if [ -n "$(ls -A "$DOTFILES_PATH/shell/bash/completions/")" ]; then
 fi
 
 PATH=~/.console-ninja/.bin:$PATH
+. "$HOME/.cargo/env"
