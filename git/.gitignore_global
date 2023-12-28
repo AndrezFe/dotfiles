@@ -1,21 +1,59 @@
-# Mac
-.DS_Store
+# S.O.
+# ----------------------------
 
-# Windows
+## Mac
+.DS_Store
+*.DS_Store
+**/.DS_Store
+**/**/DS_Store
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+.appdisk
+.LSOverride
+
+## Windows
 Thumbs.db
 ehthumbs.db
 Desktop.ini
 
 # Custom
+# ----------------------------
 .no-commit
+**/playground*
 
-# vscode
+# Ide's
+# ----------------------------
+
+## VSCode
 .vscode
+.vscode/*
+*.code-workspace
 
-# Itellij
+## Itellij
 .idea
 *.iml
 *.ipr
 *.iws
+*.sc
+.idea-compl
+.idea_modules
 
-
+## Xcode
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.xcworkspace
+xcuserdata
+*.xccheckout
+*.moved-aside
+DerivedData
+*.hmap
+*.ipa
+*.xcuserstate
+project.xcworkspace
+project.pbxproj
+xcuserdata
