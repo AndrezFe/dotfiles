@@ -15,11 +15,13 @@
 ## Restore your Dotfiles with script
 
 Using wget
+
 ```bash
 bash <(wget -qO- https://raw.githubusercontent.com/CodelyTV/dotly/HEAD/restorer)
 ```
 
 Using curl
+
 ```bash
 bash <(curl -s https://raw.githubusercontent.com/CodelyTV/dotly/HEAD/restorer)
 ```
