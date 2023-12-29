@@ -1,172 +1,189 @@
 {
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[javascript]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
-  },
-  "[javascriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[oraclesql]": {
-    "editor.quickSuggestions": {
-      "comments": "on",
-      "other": "on",
-      "strings": "on"
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "editor.suggest.showSnippets": true
-  },
-  "azureResourceManagerTools.parameterFiles": {
-    "/Volumes/Data/source/repos/IndiraSQL/Utils/azuredeploy.json": "azuredeploy.parameters.json",
-    "/Volumes/Data/source/repos/IndiraSQL/Utils/RestoreQA-dbs/azuredeploy.json": "azuredeploy.parameters.json"
-  },
-  "bashIde.explainshellEndpoint": "http://localhost:5050",
-  "dotenv.enableAutocloaking": false,
-  "editor.autoClosingBrackets": "always",
-  "editor.autoClosingQuotes": "always",
-  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
-  "editor.codeActionsOnSave": {
-    "source.fixAll": "explicit",
-    "source.fixAll.eslint": "explicit",
-    "source.organizeImports": "explicit"
-  },
-  "editor.cursorBlinking": "expand",
-  "editor.cursorSmoothCaretAnimation": "on",
-  "editor.cursorStyle": "line-thin",
-  "editor.definitionLinkOpensInPeek": true,
-  "editor.detectIndentation": false,
-  "editor.fontFamily": "'Fira Code', 'Cascadia Code', Menlo, Monaco, 'Courier New', monospace",
-  "editor.fontLigatures": true,
-  "editor.fontSize": 12,
-  "editor.fontWeight": "normal",
-  "editor.formatOnPaste": false,
-  "editor.formatOnSave": true,
-  "editor.guides.bracketPairs": true,
-  "editor.guides.indentation": false,
-  "editor.inlineSuggest.enabled": true,
-  "editor.letterSpacing": 0.2,
-  "editor.lineHeight": 2.3,
-  "editor.linkedEditing": true,
-  "editor.overviewRulerBorder": false,
-  "editor.stickyScroll.enabled": true,
-  "editor.suggest.showStatusBar": true,
-  "editor.tabSize": 2,
-  "editor.tokenColorCustomizations": {
-    "[*Dark*]": {
-      "textMateRules": [
-        {
-          "scope": "ref.matchtext",
-          "settings": {
-            "foreground": "#fff"
-          }
-        }
-      ]
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
     },
-    "[*Light*]": {
-      "textMateRules": [
-        {
-          "scope": "ref.matchtext",
-          "settings": {
-            "foreground": "#000"
-          }
-        }
-      ]
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "textMateRules": []
-  },
-  "emojisense.languages": {
-    "git-commit": true,
-    "html": true,
-    "javascript": true,
-    "javascript.validate.enable": false,
-    "javascriptreact": true,
-    "json": true,
-    "jsonc": true,
-    "latex": true,
-    "markdown": true,
-    "plaintext": {
-      "emojiDecoratorsEnabled": false,
-      "markupCompletionsEnabled": false
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "powershell": true,
-    "python": true,
-    "razor": true,
-    "ruby": true,
-    "rust": true,
-    "sass": true,
-    "scminput": true,
-    "scss": true,
-    "shellscript": true,
-    "sql": true,
-    "typescript": true,
-    "typescriptreact": true,
-    "vb": true,
-    "xml": true,
-    "xsl": true,
-    "yaml": true
-  },
-  "errorLens.fontStyleItalic": true,
-  "files.associations": {
-    ".env*": "dotenv"
-  },
-  "files.exclude": {
-    "**/.git": false
-  },
-  "github.copilot-labs.advanced": {
-    "debug.showScores": false,
-    // "top_p": 1,
-    // "temperature": "0.5",
-    "length": 500
-  },
-  "github.copilot.advanced": {
-    "debug.showScores": false,
-    // "authProvider": "github"
-    "inlineSuggestCount": 3,
-    // "top_p": 1,
-    // "temperature": "0.5",
-    "length": 500,
-    "listCount": 10
-  },
-  "github.copilot.enable": {
-    "*": true,
-    "plaintext": false,
-    "scminput": false,
-    "yaml": false
-  },
-  "indentRainbow.indicatorStyle": "light",
-  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": true,
-  "javascript.preferences.quoteStyle": "single",
-  "mssql.connections": [],
-  "npm.keybindingsChangedWarningShown": true,
-  "oracledevtools.bookmarkFileFolder": "/Users/andresfe/Oracle/oracle.oracledevtools",
-  "oracledevtools.connectionConfiguration.configFilesFolder": "/Users/andresfe/Oracle/network/admin",
-  "oracledevtools.connectionConfiguration.walletFileFolder": "/Users/andresfe/Oracle/network/admin",
-  "oracledevtools.download.otherFolder": "/Users/andresfe/downloads",
-  "prettier.jsxSingleQuote": true,
-  "prettier.singleAttributePerLine": true,
-  "prettier.singleQuote": true,
-  "projectManager.git.baseFolders": [
-    "/Volumes/Data/source/repos"
-  ],
-  "redhat.telemetry.enabled": true,
-  "terminal.external.osxExec": "Warp.app",
-  "terminal.integrated.defaultProfile.osx": "zsh",
-  "terminal.integrated.defaultProfile.windows": "Git Bash",
-  "terminal.integrated.env.osx": {},
-  "terminal.integrated.fontFamily": "MesloLGS NF",
-  "turboConsoleLog.addSemicolonInTheEnd": true,
-  "turboConsoleLog.logType": "debug",
-  "turboConsoleLog.quote": "'",
-  "typescript.preferences.quoteStyle": "single",
-  "window.dialogStyle": "custom",
-  "window.title": "${activeEditorShort}${separator}${rootName}${separator}${profileName} ${dirty}",
-  "workbench.colorCustomizations": {},
-  "workbench.colorTheme": "One Dark Pro Darker",
-  "workbench.editor.empty.hint": "hidden",
-  "workbench.iconTheme": "vscode-icons",
-  "workbench.productIconTheme": "fluent-icons",
-  "workbench.sideBar.location": "right"
+    "[oraclesql]": {
+        "editor.quickSuggestions": {
+            "comments": "on",
+            "other": "on",
+            "strings": "on"
+        },
+        "editor.suggest.showSnippets": true
+    },
+    "azureResourceManagerTools.parameterFiles": {
+        "/Volumes/Data/source/repos/IndiraSQL/Utils/azuredeploy.json": "azuredeploy.parameters.json",
+        "/Volumes/Data/source/repos/IndiraSQL/Utils/RestoreQA-dbs/azuredeploy.json": "azuredeploy.parameters.json"
+    },
+    "bashIde.explainshellEndpoint": "http://localhost:5050",
+    "dotenv.enableAutocloaking": false,
+    "editor.autoClosingBrackets": "always",
+    "editor.autoClosingQuotes": "always",
+    "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll": "explicit",
+        "source.fixAll.eslint": "explicit",
+        "source.organizeImports": "explicit"
+    },
+    "editor.cursorBlinking": "expand",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.cursorStyle": "line-thin",
+    "editor.definitionLinkOpensInPeek": true,
+    "editor.detectIndentation": false,
+    "editor.fontFamily": "'Fira Code', 'Cascadia Code', Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 14,
+    "editor.fontWeight": "normal",
+    "editor.formatOnPaste": false,
+    "editor.guides.bracketPairs": true,
+    "editor.guides.indentation": false,
+    "editor.inlineSuggest.enabled": true,
+    "editor.letterSpacing": 0.2,
+    "editor.lineHeight": 2.3,
+    "editor.linkedEditing": true,
+    "editor.minimap.maxColumn": 80,
+    "editor.overviewRulerBorder": false,
+    "editor.rulers": [],
+    "editor.stickyScroll.enabled": true,
+    "editor.suggest.showStatusBar": true,
+    "editor.tabSize": 4,
+    "editor.tokenColorCustomizations": {
+        "[*Dark*]": {
+            "textMateRules": [
+                {
+                    "scope": "ref.matchtext",
+                    "settings": {
+                        "foreground": "#fff"
+                    }
+                }
+            ]
+        },
+        "[*Light*]": {
+            "textMateRules": [
+                {
+                    "scope": "ref.matchtext",
+                    "settings": {
+                        "foreground": "#000"
+                    }
+                }
+            ]
+        },
+        "textMateRules": []
+    },
+    "editor.wordWrap": "on",
+    "editor.wrappingIndent": "indent",
+    "emojisense.languages": {
+        "git-commit": true,
+        "html": true,
+        "javascript": true,
+        "javascript.validate.enable": false,
+        "javascriptreact": true,
+        "json": true,
+        "jsonc": true,
+        "latex": true,
+        "markdown": true,
+        "plaintext": {
+            "emojiDecoratorsEnabled": false,
+            "markupCompletionsEnabled": false
+        },
+        "powershell": true,
+        "python": true,
+        "razor": true,
+        "ruby": true,
+        "rust": true,
+        "sass": true,
+        "scminput": true,
+        "scss": true,
+        "shellscript": true,
+        "sql": true,
+        "typescript": true,
+        "typescriptreact": true,
+        "vb": true,
+        "xml": true,
+        "xsl": true,
+        "yaml": true
+    },
+    "errorLens.fontStyleItalic": true,
+    "files.associations": {
+        ".env*": "dotenv"
+    },
+    "files.autoSave": "onWindowChange",
+    "files.exclude": {
+        "**/.git": false
+    },
+    "files.trimFinalNewlines": true,
+    "github.copilot-labs.advanced": {
+        "debug.showScores": false,
+        // "top_p": 1,
+        // "temperature": "0.5",
+        "length": 500
+    },
+    "github.copilot.advanced": {
+        "debug.showScores": false,
+        // "authProvider": "github"
+        "inlineSuggestCount": 3,
+        // "top_p": 1,
+        // "temperature": "0.5",
+        "length": 500,
+        "listCount": 10
+    },
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": false,
+        "scminput": false,
+        "yaml": false
+    },
+    "indentRainbow.indicatorStyle": "light",
+    "javascript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": true,
+    "javascript.preferences.quoteStyle": "single",
+    "mssql.connections": [],
+    "npm.keybindingsChangedWarningShown": true,
+    "oracledevtools.bookmarkFileFolder": "/Users/andresfe/Oracle/oracle.oracledevtools",
+    "oracledevtools.connectionConfiguration.configFilesFolder": "/Users/andresfe/Oracle/network/admin",
+    "oracledevtools.connectionConfiguration.walletFileFolder": "/Users/andresfe/Oracle/network/admin",
+    "oracledevtools.download.otherFolder": "/Users/andresfe/downloads",
+    "prettier.jsxSingleQuote": true,
+    "prettier.singleAttributePerLine": true,
+    "prettier.singleQuote": true,
+    "prettier.tabWidth": 4,
+    "projectManager.git.baseFolders": [
+        "/Volumes/Data/source/repos"
+    ],
+    "redhat.telemetry.enabled": true,
+    "search.useGlobalIgnoreFiles": true,
+    "terminal.external.osxExec": "Warp.app",
+    "terminal.integrated.defaultProfile.osx": "zsh",
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "terminal.integrated.env.osx": {},
+    "terminal.integrated.fontFamily": "MesloLGS NF",
+    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.lineHeight": 1.2,
+    "turboConsoleLog.addSemicolonInTheEnd": true,
+    "turboConsoleLog.logType": "debug",
+    "turboConsoleLog.quote": "'",
+    "typescript.preferences.quoteStyle": "single",
+    "window.dialogStyle": "custom",
+    "window.openFilesInNewWindow": "off",
+    "window.openFoldersInNewWindow": "on",
+    "window.title": "${activeEditorShort}${separator}${rootName}${separator}${profileName} ${dirty}",
+    "window.zoomLevel": 0,
+    "workbench.colorCustomizations": {
+        // "focusBorder": "#10fb7a"
+    },
+    "workbench.colorTheme": "Codely Dark",
+    "workbench.editor.empty.hint": "hidden",
+    "workbench.editor.highlightModifiedTabs": true,
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.list.defaultFindMode": "highlight",
+    "workbench.productIconTheme": "fluent-icons",
+    "workbench.sideBar.location": "right",
+    "workbench.startupEditor": "newUntitledFile"
 }

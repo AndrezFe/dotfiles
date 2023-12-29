@@ -15,6 +15,10 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+[apply]
+	whitespace = fix
+[branch]
+	sort = -committerdate
 [alias]
 	aa = add .
   br = branch
@@ -27,5 +31,3 @@
   save = stash push
   pop = stash pop
   lg = log --oneline --decorate --all --graph
-
-
