@@ -24,9 +24,11 @@
         "/Volumes/Data/source/repos/IndiraSQL/Utils/RestoreQA-dbs/azuredeploy.json": "azuredeploy.parameters.json"
     },
     "bashIde.explainshellEndpoint": "http://localhost:5050",
+    "breadcrumbs.symbolPath": "off",
     "dotenv.enableAutocloaking": false,
     "editor.autoClosingBrackets": "always",
     "editor.autoClosingQuotes": "always",
+    "editor.bracketPairColorization.enabled": true,
     "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
     "editor.codeActionsOnSave": {
         "source.fixAll": "explicit",
@@ -38,11 +40,12 @@
     "editor.cursorStyle": "line-thin",
     "editor.definitionLinkOpensInPeek": true,
     "editor.detectIndentation": false,
-    "editor.fontFamily": "'Fira Code', 'Cascadia Code', Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontFamily": "'DankMono Nerd Font', 'Fira Code', 'Cascadia Code', Menlo, Monaco, 'Courier New', monospace",
     "editor.fontLigatures": true,
     "editor.fontSize": 14,
     "editor.fontWeight": "normal",
     "editor.formatOnPaste": false,
+    "editor.formatOnSave": true,
     "editor.guides.bracketPairs": true,
     "editor.guides.indentation": false,
     "editor.inlineSuggest.enabled": true,
@@ -51,21 +54,15 @@
     "editor.linkedEditing": true,
     "editor.minimap.maxColumn": 80,
     "editor.overviewRulerBorder": false,
-    "editor.rulers": [],
+    "editor.renderWhitespace": "selection",
+    "editor.rulers": [
+        130
+    ],
+    "editor.smoothScrolling": true,
     "editor.stickyScroll.enabled": true,
     "editor.suggest.showStatusBar": true,
     "editor.tabSize": 4,
     "editor.tokenColorCustomizations": {
-        "[*Dark*]": {
-            "textMateRules": [
-                {
-                    "scope": "ref.matchtext",
-                    "settings": {
-                        "foreground": "#fff"
-                    }
-                }
-            ]
-        },
         "[*Light*]": {
             "textMateRules": [
                 {
@@ -76,9 +73,19 @@
                 }
             ]
         },
+        "[*Dark*]": {
+            "textMateRules": [
+                {
+                    "scope": "ref.matchtext",
+                    "settings": {
+                        "foreground": "#fff"
+                    }
+                }
+            ]
+        },
         "textMateRules": []
     },
-    "editor.wordWrap": "on",
+    "editor.wordWrap": "off",
     "editor.wrappingIndent": "indent",
     "emojisense.languages": {
         "git-commit": true,
@@ -112,10 +119,15 @@
         "yaml": true
     },
     "errorLens.fontStyleItalic": true,
+    "explorer.compactFolders": false,
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": true,
+    "explorer.excludeGitIgnore": false,
     "files.associations": {
         ".env*": "dotenv"
     },
-    "files.autoSave": "onWindowChange",
+    "files.autoSave": "onFocusChange",
+    "files.eol": "\n",
     "files.exclude": {
         "**/.git": false
     },
@@ -159,11 +171,12 @@
     ],
     "redhat.telemetry.enabled": true,
     "search.useGlobalIgnoreFiles": true,
+    "search.useIgnoreFiles": true,
     "terminal.external.osxExec": "Warp.app",
     "terminal.integrated.defaultProfile.osx": "zsh",
     "terminal.integrated.defaultProfile.windows": "Git Bash",
     "terminal.integrated.env.osx": {},
-    "terminal.integrated.fontFamily": "MesloLGS NF",
+    "terminal.integrated.fontFamily": "DankMono Nerd Font",
     "terminal.integrated.fontSize": 14,
     "terminal.integrated.lineHeight": 1.2,
     "turboConsoleLog.addSemicolonInTheEnd": true,
@@ -175,15 +188,28 @@
     "window.openFoldersInNewWindow": "on",
     "window.title": "${activeEditorShort}${separator}${rootName}${separator}${profileName} ${dirty}",
     "window.zoomLevel": 0,
-    "workbench.colorCustomizations": {
-        // "focusBorder": "#10fb7a"
-    },
+    "workbench.colorCustomizations": {},
     "workbench.colorTheme": "Codely Dark",
     "workbench.editor.empty.hint": "hidden",
     "workbench.editor.highlightModifiedTabs": true,
-    "workbench.iconTheme": "vscode-icons",
+    "workbench.iconTheme": "symbols",
     "workbench.list.defaultFindMode": "highlight",
+    "workbench.list.horizontalScrolling": true,
     "workbench.productIconTheme": "fluent-icons",
     "workbench.sideBar.location": "right",
-    "workbench.startupEditor": "newUntitledFile"
+    "workbench.list.smoothScrolling": true,
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.tree.indent": 12,
+    "symbols.hidesExplorerArrows": false,
+    "gitlens.views.formats.commits.label": "${❰ tips ❱➤} ${id} ${message}",
+    "errorLens.gutterIconSet": "defaultOutline",
+    "errorLens.gutterIconsEnabled": false,
+    "jest.autoRun": {
+
+    },
+    "gitlens.hovers.avatars": true,
+    "gitlens.hovers.enabled": true,
+    "gitlens.hovers.currentLine.enabled": true,
+    "conventionalCommits.emojiFormat": "code",
+    "conventionalCommits.showNewVersionNotes": false,
 }
