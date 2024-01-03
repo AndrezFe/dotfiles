@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+source "$DOTLY_PATH/scripts/core/_main.sh"
+
+##? show the private ip of the current machine
+##? 1.0.0
+##?
+##? Usage:
+##?   private_ip
+##?
+##? Options:
+##?   --help: Display this help message
+docs::parse "$@"
+
+ipconfig getifaddr en0

@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+source "$DOTLY_PATH/scripts/core/main.sh"
+
+##? Generate and copy a UUID to the clipboard
+##? 1.0.0
+##?
+##? Usage:
+##?   uuid_code
+##?
+
+docs::eval "$@"
+
+uuid=$(uuidgen | tr -d '\n' | tr '[:upper:]' '[:lower:]')
+echo "$uuid" | copy
+echo "$uuid"

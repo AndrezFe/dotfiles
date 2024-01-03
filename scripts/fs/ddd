@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+source "$DOTLY_PATH/scripts/core/_main.sh"
+
+##? create skalfold for ddd - Hexagonal Architecture (application, domain, infrastructure)
+#?? 1.0.0
+##?
+##? Usage:
+##?   ddd
+docs::parse "$@"
+
+mkdir -p "$PWD/applications"
+mkdir -p "$PWD/domain"
+mkdir -p "$PWD/infrastructure"
+
+# touch "$PWD/applications/README.md"
+# touch "$PWD/domain/README.md"
+# touch "$PWD/infrastructure/README.md"
+
+echo "Created skalfold for ddd - Hexagonal Architecture (application, domain, infrastructure)"

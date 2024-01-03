@@ -1,0 +1,41 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+source "$DOTLY_PATH/scripts/core/_main.sh"
+
+##? Prunes docker images
+#?? 1.0.0
+##?
+##? Usage:
+##?   prune
+##?
+##? Options:
+##?   --all, -a    Prune all unused images
+##?   --force, -f  Force prune
+##?
+##? Examples:
+##?   prune
+##?   prune --all
+##?   prune --force
+##?   prune --all --force
+
+docs::parse "$@"
+
+if docker ps >/dev/null 2>&1; then
+	if [[ "${FLAGS[all]}" == true ]]; then
+		if [[ "${FLAGS[force]}" == true ]]; then
+			docker system prune -a -f
+		else
+			docker system prune -a
+		fi
+	else
+		if [[ "${FLAGS[force]}" == true ]]; then
+			docker system prune -f
+		else
+			docker system prune
+		fi
+	fi
+else
+	echo "Docker daemon is not running! (ಠ_ಠ)"
+fi

@@ -1,0 +1,33 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+source "$DOTLY_PATH/scripts/core/main.sh"
+
+##? Stop all docker containers
+#?? 1.0.0
+##?
+##? Usage:
+##?   stop_all
+##?
+##? Options:
+##?   --force, -f  Force stop
+##?
+##? Examples:
+##?   stop_all
+##?   stop_all --force
+##?   stop_all -f
+
+docs::parse "$@"
+
+# docker ps -a -q | xargs -I_ docker stop "_"
+
+if docker ps >/dev/null 2>&1; then
+    if [[ "${FLAGS[force]}" == true ]]; then
+        docker stop $(docker ps -a -q)
+    else
+        docker stop $(docker ps -q)
+    fi
+else
+    echo "Docker daemon is not running! (ಠ_ಠ)"
+fi

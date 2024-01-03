@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+source "$DOTLY_PATH/scripts/core/_main.sh"
+
+##? show the public ip of the current machine
+##? 1.0.0
+##?
+##? Usage:
+##?   public_ip
+##?
+##? Options:
+##?   --help: Display this help message
+docs::parse "$@"
+
+# dig +short myip.opendns.com @resolver1.opendns.com
+curl -s https://api.ipify.org
