@@ -1,11 +1,13 @@
 # Enable aliases to be sudo’ed
 alias sudo='sudo '
 
+alias ~="cd ~"
+alias repos='cd /Volumes/Data/source/repos/'
+
 alias ..="cd .."
 alias ...="cd ../.."
 alias ll="exa -l --icons"
 alias la="exa -la --icons"
-alias ~="cd ~"
 alias dotfiles='cd $DOTFILES_PATH'
 
 # Git
@@ -28,5 +30,10 @@ alias i.='(idea $PWD &>/dev/null &)'
 alias c.='(code $PWD &>/dev/null &)'
 alias ci.='(code-insiders $PWD &>/dev/null &)'
 alias o.='open .'
-alias repos='cd /Volumes/Data/source/repos/'
+
 alias up='dot package update_all'
+alias cls='clear'
+alias copy='pbcopy'
+alias reload='source "${HOME}/.$(basename $SHELL)rc"' # env -i zsh
+alias publicip="dig +short myip.opendns.com @resolver1.opendns.com"
+alias localip="ipconfig getifaddr en0"
