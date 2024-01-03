@@ -7,6 +7,9 @@
 [core]
 	excludesfile = /Users/andresfe/.gitignore_global
 [color]
+    diff = auto
+    status = auto
+    branch = auto
 	ui = auto
 [github]
 	user = AndrezFe
@@ -21,13 +24,13 @@
 	sort = -committerdate
 [alias]
 	aa = add .
-  br = branch
-  st = status
-  sts = status -s -b
-  pullm = pull origin master
-  pushm = push origin master
-  cob = checkout -b
-  cm = commit -m
-  save = stash push
-  pop = stash pop
-  lg = log --oneline --decorate --all --graph
+    br = branch
+    st = status
+    sts = status -s -b
+    pullm = pull origin master
+    pushm = push origin master
+    cob = checkout -b
+    cm = commit -m
+    save = stash push
+    pop = stash pop
+    lg = log --oneline --decorate --all --graph
