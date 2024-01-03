@@ -9,9 +9,6 @@ source "$DOTLY_PATH/scripts/core/_main.sh"
 ##?
 ##? Usage:
 ##?   private_ip
-##?
-##? Options:
-##?   --help: Display this help message
 docs::parse "$@"
 
 ipconfig getifaddr en0

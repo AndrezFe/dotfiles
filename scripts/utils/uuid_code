@@ -9,8 +9,6 @@ source "$DOTLY_PATH/scripts/core/main.sh"
 ##?
 ##? Usage:
 ##?   uuid_code
-##?
-
 docs::eval "$@"
 
 uuid=$(uuidgen | tr -d '\n' | tr '[:upper:]' '[:lower:]')

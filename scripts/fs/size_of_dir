@@ -9,17 +9,6 @@ source "$DOTLY_PATH/scripts/core/_main.sh"
 ##?
 ##? Usage:
 ##?   size_of_dir
-##?
-##? Options:
-##?   -h, --help       Show usage
-##?   -v, --version    Show version
-##?
-##? Examples:
-##?   size_of_dir
-##?   size_of_dir -h
-##?   size_of_dir --help
-##?   size_of_dir -v
-##?   size_of_dir --version
 docs::parse "$@"
 
 # ncdu -rr -x --color dark -o- "$PWD" | less -R
