@@ -1,0 +1,57 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+source "$DOTLY_PATH/scripts/core/_main.sh"
+
+##? Connect to an Azure account whit azure-cli and set subscription
+#?? 1.0.0
+##?
+##? Usage:
+##?   connect
+##?
+##? Options:
+##?   -h, --help       Show help options
+##?   -v, --version    Show version
+##?
+docs::parse "$@"
+
+if ! command az &>/dev/null; then
+  log::error "Azure CLI is not installed"
+  exit 1
+fi
+
+declare -A login_options
+
+login_options=(
+  ["💻 Default"]="default"
+  ["🔢 Device Code"]="code"
+  ["👤 User/pass"]="user/pass"
+)
+
+selected_login_option=$(printf '%s\n' "${!login_options[@]}" | fzf --prompt="Select login option: ")
+# selected_login_option=$(printf '%s\n' "${!login_options[@]}" | choose::one --prompt="Select login option: ")
+
+case "${login_options[$selected_login_option]}" in
+  "default")
+    az login
+    ;;
+  "code")
+    az login --use-device-code
+    ;;
+  "user/pass")
+    az login --username "$AZURE_USERNAME"
+    ;;
+esac
+
+if ! command -v az &>/dev/null; then
+  log::error "Azure CLI is not installed"
+  exit 1
+fi
+
+if ! az account show &>/dev/null; then
+  log::error "You are not logged in Azure CLI"
+  exit 1
+fi
+
+log::note "You are already logged in Azure CLI"
