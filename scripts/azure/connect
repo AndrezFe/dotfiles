@@ -44,14 +44,4 @@ case "${login_options[$selected_login_option]}" in
     ;;
 esac
 
-if ! command -v az &>/dev/null; then
-  log::error "Azure CLI is not installed"
-  exit 1
-fi
-
-if ! az account show &>/dev/null; then
-  log::error "You are not logged in Azure CLI"
-  exit 1
-fi
-
 log::note "You are already logged in Azure CLI"
