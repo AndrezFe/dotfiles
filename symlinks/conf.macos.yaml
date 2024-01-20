@@ -19,3 +19,4 @@
     ~/bin/zsh: /opt/homebrew/bin/zsh
     # ~/Library/Application\ Support/Code\ -\ Insiders/User/settings.json: editors/code-insiders/settings.json
     # ~/Library/Application\ Support/Code\ -\ Insiders/User/snippets: editors/code-insiders/snippets
+    # ~/Library/Application\ Support/Code\ -\ Insiders/User/keybindings.json: editors/code-insiders/keybinding.json
