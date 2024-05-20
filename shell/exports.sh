@@ -42,6 +42,7 @@ path=(
 	"$GEM_HOME/bin"
 	"$GOPATH/bin"
     "$DOTNET_HOME"
+    "$DOTNET_HOME/tools"
     "$DOTNET_ROOT"
 	"$HOME/.cargo/bin"
 	"/usr/local/opt/ruby/bin"
