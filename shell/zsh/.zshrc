@@ -30,3 +30,4 @@ source "$DOTFILES_PATH/shell/zsh/key-bindings.zsh"
 
 # bun completions
 [ -s "/Users/andresfe/.bun/_bun" ] && source "/Users/andresfe/.bun/_bun"
+PATH=~/.console-ninja/.bin:$PATH
