@@ -1,0 +1,62 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+source "$DOTLY_PATH/scripts/core/_main.sh"
+
+##? create scaffold for new use case <useCaseName> in ddd - clean arquitecture with CQRS
+##? 1.0.0
+##?
+##? Usage:
+##?   cqrs-usecase [options] <useCaseName>
+##?
+##? Options:
+##?   --query, -q       Create a query use case
+##?   --command, -c     Create a command use case
+##?   --event, -e       Create an event use case
+##?   --help, -h        Display this help message
+##?
+##? Examples:
+##?   cqrs-usecase --query get-user
+##?   cqrs-usecase --command create-user
+##?   cqrs-usecase --event user-created
+##?
+
+docs::parse "$@"
+
+if [ "$1" == "-h" ] || [ "$1" == "--help" ]; then
+    docs::help
+    exit 0
+fi
+
+echo "Creating scaffold for new use case in ddd - clean arquitecture with CQRS"
+if [ -z "$useCaseName" ]; then
+    echo "Please provide a use case name"
+    exit 1
+fi
+
+if [ -z "$query" ] && [ -z "$command" ] && [ -z "$event" ]; then
+    echo "Please provide an option --query, --command or --event"
+    exit 1
+fi
+
+if [ "$query" == "true" ]; then
+    echo "Creating query use case $useCaseName" with query and query handler
+    mkdir -p "$PWD/Queries"
+    touch "$PWD/Queries/$useCaseName""Query.cs"
+    touch "$PWD/Queries/$useCaseName""QueryHandler.cs"
+fi
+
+if [ "$command" == "true" ]; then
+    echo "Creating command use case $useCaseName" with command, command handler and command validator
+    mkdir -p "$PWD/Commands"
+    touch "$PWD/Commands/$useCaseName""Command.cs"
+    touch "$PWD/Commands/$useCaseName""CommandHandler.cs"
+    touch "$PWD/Commands/$useCaseName""CommandValidator.cs"
+fi
+
+if [ "$event" == "true" ]; then
+    echo "Creating event handler use case $useCaseName" with event handler
+    mkdir -p "$PWD/EventsHandlers"
+    touch "$PWD/Events/$useCaseName""EventHandler.cs"
+fi
