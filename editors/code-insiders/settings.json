@@ -1,6 +1,6 @@
 {
     "[html]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+        "editor.defaultFormatter": "vscode.html-language-features"
     },
     "[javascript]": {
         "editor.defaultFormatter": "vscode.typescript-language-features"
@@ -18,6 +18,9 @@
             "strings": "on"
         },
         "editor.suggest.showSnippets": true
+    },
+    "[sql]": {
+        "editor.formatOnSave": false,
     },
     "azureResourceManagerTools.parameterFiles": {
         "/Volumes/Data/source/repos/IndiraSQL/Utils/azuredeploy.json": "azuredeploy.parameters.json",
@@ -58,7 +61,7 @@
     "editor.minimap.maxColumn": 80,
     "editor.overviewRulerBorder": false,
     "editor.renderWhitespace": "selection",
-    "editor.rulers": [130],
+    "editor.rulers": [130, 180],
     "editor.smoothScrolling": true,
     "editor.stickyScroll.enabled": true,
     "editor.suggest.showStatusBar": true,
@@ -127,6 +130,8 @@
     "explorer.confirmDragAndDrop": true,
     "explorer.excludeGitIgnore": false,
     "files.associations": {
+        "*.excalidraw": "json",
+        "*.excalidrawlib": "json",
         ".env*": "dotenv",
         "*.cheat": "shellscript",
         "*.arc*": "jsonc",
@@ -214,5 +219,6 @@
     "workbench.productIconTheme": "fluent-icons",
     "workbench.sideBar.location": "right",
     "workbench.startupEditor": "newUntitledFile",
-    "workbench.tree.indent": 12
+    "workbench.tree.indent": 12,
+    "editor.cursorSurroundingLines": 8
 }
