@@ -20,7 +20,7 @@
         "editor.suggest.showSnippets": true
     },
     "[sql]": {
-        "editor.formatOnSave": false,
+        "editor.formatOnSave": false
     },
     "azureResourceManagerTools.parameterFiles": {
         "/Volumes/Data/source/repos/IndiraSQL/Utils/azuredeploy.json": "azuredeploy.parameters.json",
@@ -220,5 +220,6 @@
     "workbench.sideBar.location": "right",
     "workbench.startupEditor": "newUntitledFile",
     "workbench.tree.indent": 12,
-    "editor.cursorSurroundingLines": 8
+    "editor.cursorSurroundingLines": 8,
+    "github.copilot.editor.enableAutoCompletions": true
 }
