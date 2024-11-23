@@ -23,14 +23,15 @@
         "editor.formatOnSave": false
     },
     "azureResourceManagerTools.parameterFiles": {
-        "/Volumes/Data/source/repos/IndiraSQL/Utils/azuredeploy.json": "azuredeploy.parameters.json",
-        "/Volumes/Data/source/repos/IndiraSQL/Utils/RestoreQA-dbs/azuredeploy.json": "azuredeploy.parameters.json"
+        "/Volumes/Data/source/repos/IndiraSQL/Utils/RestoreQA-dbs/azuredeploy.json": "azuredeploy.parameters.json",
+        "/Volumes/Data/source/repos/IndiraSQL/Utils/azuredeploy.json": "azuredeploy.parameters.json"
     },
     "bashIde.explainshellEndpoint": "http://localhost:5050",
     "breadcrumbs.symbolPath": "off",
     "conventionalCommits.emojiFormat": "code",
     "conventionalCommits.showNewVersionNotes": false,
     "dotenv.enableAutocloaking": false,
+    "dotnetAcquisitionExtension.enableTelemetry": false,
     "editor.autoClosingBrackets": "always",
     "editor.autoClosingQuotes": "always",
     "editor.bracketPairColorization.enabled": true,
@@ -43,6 +44,7 @@
     "editor.cursorBlinking": "expand",
     "editor.cursorSmoothCaretAnimation": "on",
     "editor.cursorStyle": "line-thin",
+    "editor.cursorSurroundingLines": 8,
     "editor.definitionLinkOpensInPeek": true,
     "editor.detectIndentation": false,
     "editor.fontFamily": "'DankMono Nerd Font', 'Fira Code', 'Cascadia Code', Menlo, Monaco, 'Courier New', monospace",
@@ -52,37 +54,44 @@
     "editor.formatOnPaste": false,
     "editor.formatOnSave": true,
     "editor.guides.bracketPairs": true,
-    "editor.guides.indentation": false,
+    "editor.guides.indentation": true,
+    "editor.inlineSuggest.edits.experimental.enabled": false,
     "editor.inlineSuggest.enabled": true,
     "editor.letterSpacing": 0.2,
     "editor.lineHeight": 2.3,
     "editor.lineNumbers": "on",
     "editor.linkedEditing": true,
+    "editor.minimap.autohide": true,
+    "editor.minimap.enabled": false,
     "editor.minimap.maxColumn": 80,
     "editor.overviewRulerBorder": false,
     "editor.renderWhitespace": "selection",
-    "editor.rulers": [130, 180],
+    "editor.rulers": [
+        130,
+        180
+    ],
+    "editor.semanticHighlighting.enabled": true,
     "editor.smoothScrolling": true,
     "editor.stickyScroll.enabled": true,
     "editor.suggest.showStatusBar": true,
     "editor.tabSize": 4,
     "editor.tokenColorCustomizations": {
-        "[*Light*]": {
-            "textMateRules": [
-                {
-                    "scope": "ref.matchtext",
-                    "settings": {
-                        "foreground": "#000"
-                    }
-                }
-            ]
-        },
         "[*Dark*]": {
             "textMateRules": [
                 {
                     "scope": "ref.matchtext",
                     "settings": {
                         "foreground": "#fff"
+                    }
+                }
+            ]
+        },
+        "[*Light*]": {
+            "textMateRules": [
+                {
+                    "scope": "ref.matchtext",
+                    "settings": {
+                        "foreground": "#000"
                     }
                 }
             ]
@@ -123,24 +132,28 @@
         "yaml": true
     },
     "errorLens.fontStyleItalic": true,
-    "errorLens.gutterIconsEnabled": false,
     "errorLens.gutterIconSet": "defaultOutline",
+    "errorLens.gutterIconsEnabled": false,
+    "eslint.validate": [],
     "explorer.compactFolders": false,
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": true,
     "explorer.excludeGitIgnore": false,
+    "explorer.fileNesting.patterns": {
+        ".env": ".env*"
+    },
     "files.associations": {
+        "*.arc*": "jsonc",
+        "*.cheat": "shellscript",
+        "*.envrc": "shellscript",
+        "*.eslintrc": "jsonc",
         "*.excalidraw": "json",
         "*.excalidrawlib": "json",
-        ".env*": "dotenv",
-        "*.cheat": "shellscript",
-        "*.arc*": "jsonc",
-        "*.eslintrc": "jsonc",
-        "*.envrc": "shellscript",
         "*.uql": "sql",
-        "*rc": "shellscript",
         "*BUILD": "shellscript",
-        "*config": "ini"
+        "*config": "ini",
+        "*rc": "shellscript",
+        ".env*": "dotenv"
     },
     "files.autoSave": "onFocusChange",
     "files.eol": "\n",
@@ -163,6 +176,7 @@
         "length": 500,
         "listCount": 10
     },
+    "github.copilot.editor.enableAutoCompletions": true,
     "github.copilot.enable": {
         "*": true,
         "plaintext": false,
@@ -172,26 +186,32 @@
     "gitlens.hovers.avatars": true,
     "gitlens.hovers.currentLine.enabled": true,
     "gitlens.hovers.enabled": true,
+    "gitlens.telemetry.enabled": false,
     "gitlens.views.formats.commits.label": "${❰ tips ❱➤} ${id} ${message}",
     "indentRainbow.indicatorStyle": "light",
     "javascript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": true,
     "javascript.preferences.quoteStyle": "single",
-    "jest.autoRun": {},
+    "jest.runMode": null,
     "mssql.connections": [],
     "npm.keybindingsChangedWarningShown": true,
     "oracledevtools.bookmarkFileFolder": "/Users/andresfe/Oracle/oracle.oracledevtools",
     "oracledevtools.connectionConfiguration.configFilesFolder": "/Users/andresfe/Oracle/network/admin",
     "oracledevtools.connectionConfiguration.walletFileFolder": "/Users/andresfe/Oracle/network/admin",
     "oracledevtools.download.otherFolder": "/Users/andresfe/downloads",
+    "postman.telemetry.enabled": false,
     "prettier.jsxSingleQuote": true,
     "prettier.singleAttributePerLine": true,
     "prettier.singleQuote": true,
     "prettier.tabWidth": 4,
-    "projectManager.git.baseFolders": ["/Volumes/Data/source/repos"],
-    "redhat.telemetry.enabled": true,
+    "projectManager.git.baseFolders": [
+        "/Volumes/Data/source/repos"
+    ],
+    "redhat.telemetry.enabled": false,
+    "rest-client.enableTelemetry": false,
     "search.useGlobalIgnoreFiles": true,
     "search.useIgnoreFiles": true,
     "symbols.hidesExplorerArrows": false,
+    "telemetry.telemetryLevel": "crash",
     "terminal.external.osxExec": "Warp.app",
     "terminal.integrated.defaultProfile.osx": "zsh",
     "terminal.integrated.defaultProfile.windows": "Git Bash",
@@ -208,10 +228,12 @@
     "window.openFoldersInNewWindow": "on",
     "window.title": "${activeEditorShort}${separator}${rootName}${separator}${profileName} ${dirty}",
     "window.zoomLevel": 0,
+    "workbench.activityBar.location": "top",
     "workbench.colorCustomizations": {},
     "workbench.colorTheme": "Codely Dark",
     "workbench.editor.empty.hint": "hidden",
     "workbench.editor.highlightModifiedTabs": true,
+    "workbench.editor.pinnedTabSizing": "compact",
     "workbench.iconTheme": "symbols",
     "workbench.list.defaultFindMode": "highlight",
     "workbench.list.horizontalScrolling": true,
@@ -219,7 +241,5 @@
     "workbench.productIconTheme": "fluent-icons",
     "workbench.sideBar.location": "right",
     "workbench.startupEditor": "newUntitledFile",
-    "workbench.tree.indent": 12,
-    "editor.cursorSurroundingLines": 8,
-    "github.copilot.editor.enableAutoCompletions": true
+    "workbench.tree.indent": 12
 }
