@@ -6,8 +6,9 @@ alias repos='cd /Volumes/Data/source/repos/'
 
 alias ..="cd .."
 alias ...="cd ../.."
-alias ll="exa -l --icons"
-alias la="exa -la --icons"
+alias ll="eza -lahT -L=2 --icons"
+alias la="lsd -lah"
+alias lah="lsd -lah --header"
 alias dotfiles='cd $DOTFILES_PATH'
 
 # Git
