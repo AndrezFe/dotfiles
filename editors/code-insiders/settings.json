@@ -76,22 +76,22 @@
     "editor.suggest.showStatusBar": true,
     "editor.tabSize": 4,
     "editor.tokenColorCustomizations": {
-        "[*Dark*]": {
-            "textMateRules": [
-                {
-                    "scope": "ref.matchtext",
-                    "settings": {
-                        "foreground": "#fff"
-                    }
-                }
-            ]
-        },
         "[*Light*]": {
             "textMateRules": [
                 {
                     "scope": "ref.matchtext",
                     "settings": {
                         "foreground": "#000"
+                    }
+                }
+            ]
+        },
+        "[*Dark*]": {
+            "textMateRules": [
+                {
+                    "scope": "ref.matchtext",
+                    "settings": {
+                        "foreground": "#fff"
                     }
                 }
             ]
@@ -143,17 +143,17 @@
         ".env": ".env*"
     },
     "files.associations": {
-        "*.arc*": "jsonc",
-        "*.cheat": "shellscript",
-        "*.envrc": "shellscript",
-        "*.eslintrc": "jsonc",
         "*.excalidraw": "json",
         "*.excalidrawlib": "json",
+        ".env*": "dotenv",
+        "*.cheat": "shellscript",
+        "*.arc*": "jsonc",
+        "*.eslintrc": "jsonc",
+        "*.envrc": "shellscript",
         "*.uql": "sql",
-        "*BUILD": "shellscript",
-        "*config": "ini",
         "*rc": "shellscript",
-        ".env*": "dotenv"
+        "*BUILD": "shellscript",
+        "*config": "ini"
     },
     "files.autoSave": "onFocusChange",
     "files.eol": "\n",
