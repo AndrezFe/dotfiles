@@ -1,0 +1,113 @@
+# Sistema Operativo
+# ----------------------------
+
+## macOS
+.DS_Store
+*.DS_Store
+**/.DS_Store
+**/**/DS_Store
+._*
+.Spotlight-V100
+.Trashes
+.appdisk
+.LSOverride
+
+## Windows
+Desktop.ini
+ehthumbs.db
+Thumbs.db
+
+# IDEs y Editores
+# ----------------------------
+
+## VSCode
+.vscode/
+.vscode/*
+*.code-workspace
+
+## IntelliJ IDEA
+.idea/
+.idea-compl
+.idea_modules
+*.iml
+*.ipr
+*.iws
+*.sc
+
+## Xcode
+*.hmap
+*.ipa
+*.mode1v3
+*.mode2v3
+*.moved-aside
+*.pbxuser
+*.perspectivev3
+*.xccheckout
+*.xcuserstate
+*.xcworkspace
+DerivedData/
+project.pbxproj
+project.xcworkspace
+xcuserdata/
+
+# Lenguajes de Programación
+# ----------------------------
+
+## Python
+__pycache__/
+*.coverage
+*.coverage.*
+.coverage
+.coverage.*
+.pytest_cache/
+
+## Node.js
+node_modules/
+package-lock.json
+
+# Herramientas y Plataformas
+# ----------------------------
+
+## Docker
+docker-compose.override.yml
+docker-compose.override.yml.backup
+
+## Kubernetes
+kubectl.yaml.backup
+
+## Terraform
+.terraform.lock.hcl.backup
+
+# Archivos de Configuración
+# ----------------------------
+.env
+.env.local
+.env.development.local
+.env.production.local
+.env.test.local
+
+# LLMs y AI
+# ----------------------------
+.claude
+.playwright-mcp
+/.mcp.json
+CLAUDE.md
+**/**/models/**/**
+
+# Archivos Temporales y Logs
+# ----------------------------
+*.log
+*.log.*
+*.log.*.*
+*.tmp
+*.tmp.*
+
+# Archivos Privados
+# ----------------------------
+/**/**/private-*
+
+# Personalizado
+# ----------------------------
+.no-commit
+*.local.*
+**/playground*

@@ -1,0 +1,101 @@
+[user]
+	name = Andres Felipe Ramirez Ocaña
+	email = andresfelipero94@hotmail.com
+
+[init]
+	defaultBranch = main
+
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+	ui = true
+
+[github]
+	user = AndrezFe
+
+[branch]
+	sort = -committerdate
+
+[fetch]
+	prune = true
+
+[push]
+	default = simple
+	autoSetupRemote = true
+
+[pull]
+	rebase = true
+
+[core]
+	excludesfile = /Users/andresfe/.gitignore_global
+    attributesfile = /Users/andresfe/.gitattributes
+	autocrlf = input
+	trustctime = false
+	precomposeunicode = false
+	pager = delta --dark
+	ignorecase = false
+
+[help]
+	autocorrect = 1
+
+[color "diff"]
+	meta = yellow bold
+	commit = green bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
+
+[color "diff-highlight"]
+	oldNormal = red bold
+	oldHighlight = "red bold 52"
+	newNormal = "green bold"
+	newHighlight = "green bold 22"
+
+[color "branch"]
+	current = yellow reverse
+	local = yellow
+	remote = green
+
+[color "status"]
+	added = yellow
+	changed = green
+	untracked = cyan
+
+[apply]
+	whitespace = fix
+
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+
+[delta]
+    features = line-numbers decorations
+    whitespace-error-style = 22 reverse
+
+[delta "decorations"]
+    commit-decoration-style = bold yellow box ul
+    file-style = bold yellow ul
+    file-decoration-style = none
+
+[diff]
+	compactionHeuristic = true
+	indentHeuristic = true
+
+[difftool]
+	prompt = false
+
+[diff "json"]
+	textconv = python -m json.tool
+
+[diff "word"]
+	textconv = docx2txt
+
+[credential]
+	helper = osxkeychain
+
+[safe]
+	directory = /Users/andresfe/.dotfiles
